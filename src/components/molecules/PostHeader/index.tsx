@@ -5,7 +5,7 @@ import PostAvatar from "../../atoms/PostAvatar";
 import PostUsername from "../../atoms/PostUserName";
 import PostLocation from "../../atoms/PostLocation";
 
-import { styles } from "../../../pages/Feed/styles";
+import { styles } from "./styles";
 import { ProfileIcon } from "../../../global/styles/icons";
 
 type Props = { username: string; location: string };
@@ -13,7 +13,7 @@ type Props = { username: string; location: string };
 export function PostHeader({ username, location }: Props) {
   return (
     <View style={styles.postHeader}>
-      <PostAvatar source={ProfileIcon} style={styles.postAvatar} />
+      <PostAvatar source={ProfileIcon} />
       <View>
         <PostUsername value={username} />
         <PostLocation value={location} />

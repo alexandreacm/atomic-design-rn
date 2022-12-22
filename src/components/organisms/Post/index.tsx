@@ -1,7 +1,7 @@
 import React from "react";
 import { View, ImageProps } from "react-native";
 
-import { styles } from "../../../pages/Feed/styles";
+import { styles } from "./styles";
 
 import PostPhoto from "../../atoms/PostPhoto";
 import PostDescription from "../../atoms/PostDescription";
