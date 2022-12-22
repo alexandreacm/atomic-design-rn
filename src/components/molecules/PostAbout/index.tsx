@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, Image, ImageProps } from "react-native";
+import { View, ImageProps } from "react-native";
 
 import { styles } from "../../../pages/Feed/styles";
-import { PostProps } from "../../organisms/Post";
+import PostLiked from "../../atoms/PostLiked";
+import PostLikedAvatar from "../../atoms/PostLikedAvatar";
 
 type Props = {
   avatar: ImageProps;
@@ -12,8 +13,8 @@ type Props = {
 export function PostAbout({ avatar, likes }: Props) {
   return (
     <View style={styles.postAbout}>
-      <Image source={avatar} style={styles.lastLiked} />
-      <Text style={styles.likes}>{likes}</Text>
+      <PostLikedAvatar source={avatar} />
+      <PostLiked value={likes} />
     </View>
   );
 }

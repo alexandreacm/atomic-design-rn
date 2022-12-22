@@ -9,16 +9,18 @@ import {
 } from "../../../global/styles/icons";
 
 import { styles } from "../../../pages/Feed/styles";
+import { ButtonIcon } from "../../atoms/ButtonIcon";
 
-export  function PostOptions() {
+export function PostOptions() {
   return (
     <View style={styles.postOptions}>
       <View style={styles.postOptionsSide}>
-        <FavoriteIcon style={styles.postOptionsIcon} />
-        <CommentIcon style={styles.postOptionsIcon} />
-        <MessengerIcon style={styles.postOptionsIcon} />
+        <ButtonIcon icon={FavoriteIcon} />
+        <ButtonIcon icon={CommentIcon} />
+        <ButtonIcon icon={MessengerIcon} />
       </View>
 
+      {/* <ButtonIcon icon={SaveIcon} /> */}
       <SaveIcon />
     </View>
   );

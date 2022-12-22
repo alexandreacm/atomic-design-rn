@@ -3,11 +3,12 @@ import { View, ImageProps } from "react-native";
 
 import { styles } from "../../../pages/Feed/styles";
 
-import { PostHeader } from "../../molecules/PostHeader";
 import PostPhoto from "../../atoms/PostPhoto";
+import PostDescription from "../../atoms/PostDescription";
+
+import { PostHeader } from "../../molecules/PostHeader";
 import { PostOptions } from "../../molecules/PostOptions";
 import { PostAbout } from "../../molecules/PostAbout";
-import PostDescription from "../../atoms/PostDescription";
 
 export type Profile = {
   id: string;

@@ -2,20 +2,22 @@ import React from "react";
 import { FlatList } from "react-native";
 
 import { styles } from "../../../pages/Feed/styles";
-import { posts } from "../../../utils/posts";
-import Post from "../../organisms/Post";
+import Post, { PostProps } from "../../organisms/Post";
 
+type Props = {
+  data: PostProps[];
+};
 
-export function Posts() {
+export function Posts({ data }: Props) {
+  const renderItem = (item: PostProps) => <Post data={item} />;
+
   return (
     <FlatList
-      data={posts}
+      data={data}
       style={styles.posts}
       showsVerticalScrollIndicator={false}
       keyExtractor={(post) => post.id}
-      renderItem={({ item }) => (
-         <Post data={item} />
-      )}
+      renderItem={({ item }) => renderItem(item)}
     />
   );
 }
