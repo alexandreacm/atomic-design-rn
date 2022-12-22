@@ -56,25 +56,10 @@ export const styles = StyleSheet.create({
     marginBottom: 7,
     paddingHorizontal: 10
   },
-  postAvatar: {
-    width: 32,
-    height: 32,
-    marginRight: 9
-  },
-  cover: {
-    width
-  },
   postFooter: {
     width,
     paddingVertical: 15,
     paddingHorizontal: 10
-  },
-  postUsername: {
-    fontSize: 12,
-    fontWeight: 'bold'
-  },
-  postLocation: {
-    fontSize: 10,
   },
   postOptions: {
     flexDirection: 'row',
@@ -84,25 +69,8 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center'
   },
-  postOptionsIcon: {
-    marginRight: 15
-  },
-  lastLiked: {
-    width: 20,
-    height: 20
-  },
   postAbout: {
     flexDirection: 'row',
     marginTop: 14
   },
-  likes: {
-    marginLeft: 7,
-    fontWeight: 'bold',
-    fontSize: 13
-  },
-  description: {
-    textAlign: 'justify',
-    fontSize: 13,
-    marginTop: 6
-  }
 });
