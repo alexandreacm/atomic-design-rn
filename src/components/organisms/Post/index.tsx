@@ -34,20 +34,20 @@ export default function Post({ data }: Props) {
   return (
     <View style={styles.post}>
       {/* molecules */}
-      <PostHeader username={data.username} location={data.location} />
+      <PostHeader username={data?.username} location={data?.location} />
 
       {/* atom */}
-      <PostPhoto source={data.cover} />
+      <PostPhoto source={data?.cover} />
 
       <View style={styles.postFooter}>
         {/* molecules */}
         <PostOptions />
 
         {/* molecules */}
-        <PostAbout avatar={data.lastLiked.avatar} likes={data.likes} />
+        <PostAbout avatar={data?.lastLiked?.avatar} likes={data?.likes} />
 
         {/* atom */}
-        <PostDescription description={data.description} />
+        <PostDescription description={data?.description} />
       </View>
     </View>
   );
