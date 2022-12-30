@@ -14,11 +14,4 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     paddingLeft: 15,
   },
-  profile: {
-    marginRight: 15,
-    alignItems: "center",
-  },
-  username: {
-    fontSize: 12,
-  },
 });

@@ -5,7 +5,8 @@ import CameraIcon from '../../assets/icons/camera.svg';
 import LogoIcon from '../../assets/icons/logo.svg';
 import IgtvIcon from '../../assets/icons/igtv.svg';
 import SaveIcon from '../../assets/icons/save.svg';
-import ProfileIcon from '../../assets/people/1.png';
+import more from '../../assets/icons/more.png';
+import ProfileIcon from '../../assets/people/7.png';
 
 export {
   MessengerIcon,
@@ -15,5 +16,6 @@ export {
   LogoIcon,
   IgtvIcon,
   SaveIcon,
-  ProfileIcon
+  ProfileIcon,
+  more
 }

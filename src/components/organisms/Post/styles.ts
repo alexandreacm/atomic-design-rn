@@ -5,7 +5,7 @@ const { width } = Dimensions.get("window");
 
 export const styles = StyleSheet.create({
   post: {
-    marginTop: 52,
+    marginTop: 25,
   },
   postFooter: {
     width,

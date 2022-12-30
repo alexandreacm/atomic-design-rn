@@ -14,7 +14,7 @@ export function Feed() {
   return (
     <View style={styles.container}>
 
-       {/* Templates */}
+      {/* Templates */}
       <Header />
 
       <Stories profiles={profiles} />
