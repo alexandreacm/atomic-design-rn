@@ -13,8 +13,11 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     minWidth: 66,
     alignItems: "center",
+    marginTop: 10
   },
   messengerIcon: {
     marginLeft: 15,
+    width: 20, 
+    height: 20
   },
 });
