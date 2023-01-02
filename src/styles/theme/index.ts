@@ -28,24 +28,24 @@ const theme = createTheme({
     boxVariants: {
         defaults: {},
         pill: {
-          paddingVertical: 's',
-          paddingHorizontal: 'l',
-          marginTop: 's',
-          borderRadius: 12,
-          justifyContent: 'center',
-          alignItems: 'center',
-          bg: 'usdColor',
+            paddingVertical: 's',
+            paddingHorizontal: 'l',
+            marginTop: 's',
+            borderRadius: 12,
+            justifyContent: 'center',
+            alignItems: 'center',
+            bg: 'usdColor',
         },
-      },
-    // textVariants: {
-    //     header: {
-    //         fontFamily: 'ShopifySans-Bold',
-    //         fontWeight: 'bold',
-    //         fontSize: 34,
-    //         lineHeight: 42.5,
-    //         color: 'black',
-    //     }
-    // },
+    },
+    textVariants: {
+        header: {
+            fontFamily: 'ShopifySans-Bold',
+            fontWeight: 'bold',
+            fontSize: 34,
+            lineHeight: 42.5,
+            color: 'black',
+        }
+    },
 });
 
 export type Theme = typeof theme;
