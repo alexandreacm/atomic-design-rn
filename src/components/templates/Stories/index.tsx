@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
 import { Profile } from '../../organisms/Post';
-import { PostProfile } from '../../molecules/PostProfile';
+import { PostProfile } from '../../organisms/PostProfile';
 
 
 import { styles } from "./styles";
